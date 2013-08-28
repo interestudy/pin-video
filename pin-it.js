@@ -1,7 +1,5 @@
-
-function hello{
-
-alert("hello");
-
+function hello(){
+	alert("hello");
 };
+
 hello();
