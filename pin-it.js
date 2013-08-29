@@ -1,6 +1,6 @@
  
          
-         myMovie.Rewind();
+        alert(myMovie.IsPlaying());
         
     
     
