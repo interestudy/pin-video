@@ -4,5 +4,7 @@
          video_box.StopPlay();
          alert("hello");
     }
+    
+    stopvideo();
 
 
