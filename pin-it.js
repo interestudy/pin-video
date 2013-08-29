@@ -1,10 +1,6 @@
- 
-         
-       // myMovie.StopPlayer();
-        movie_player.StopPlayer();
-        alert("ok");
-        
-    
+         movie_player.StopPlayer();
+         alert("ok");
+   
     
    
 
