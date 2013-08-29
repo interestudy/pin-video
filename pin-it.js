@@ -1,4 +1,8 @@
  
-    alert("hello");
+    function stopvideo(){
+         var video_box = document.getElementById('video_box');
+         video_box.StopPlay();
+         alert("hello");
+    }
 
 
