@@ -1,7 +1,7 @@
  
     function stopvideo(){
          //var flashplayer = document.getElementById('flashPlayer');
-         flashPlayer.StopPlay();
+         myMovie.StopPlay();
          alert("hello");
     }
     
