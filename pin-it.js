@@ -1,6 +1,7 @@
  
          
-        alert(myMovie.IsPlaying());
+        
+        movie_player.StopPlayer();
         
     
     
