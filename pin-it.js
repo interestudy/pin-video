@@ -1,21 +1,24 @@
-function getFlashMovieObject(movieName){
-    if (window.document[movieName]){
-            
-      return window.document[movieName];
+
+
+if (navigator.appName.indexOf("Microsoft Internet")==-1) {
+    if (document.embeds && document.embeds[id]){
+    	if(navigator.userAgent.indexOf("Firefox")>0){
+    		chartRef = document.embeds[id];
+    	}else{
+    		chartRef = window[id];
+    	}
+    }
+	else{
+		chartRef  = window.document[id];
+	}
+	     
   }
-  if (navigator.appName.indexOf("Microsoft Internet")==-1){
- 
-    if (document.embeds && document.embeds[movieName])
-      return document.embeds[movieName];
+  else {                  
+    chartRef = window[id];
   }
-  else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
-  {
-    return document.getElementById(movieName);
-  }
-}
-        var movie = getFlashMovieObject(myMovie);
-        movie.gotoframe(11);
-        movie.play();
+         
+        chartRef.gotoframe(11);
+        chartRef.play();
        
         alert("ok");
    
