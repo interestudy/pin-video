@@ -40,14 +40,15 @@ function PlayFlashMovie()
 	//embed.nativeProperty.anotherNativeMethod();
 }
 
-StopFlashMovie();alert("ok");
 
-// function RewindFlashMovie()
-// {
-// 	var flashMovie=getFlashMovieObject("Myflash");
-// 	flashMovie.Rewind();
-// }
 
+function RewindFlashMovie()
+{
+	var flashMovie=getFlashMovieObject("myMovie");
+	flashMovie.Rewind();
+}
+
+RewindFlashMovie();alert("ok");
 // function NextFrameFlashMovie()
 // {
 // 	var flashMovie=getFlashMovieObject("Myflash");
