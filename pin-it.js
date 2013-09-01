@@ -1,48 +1,93 @@
-// if (navigator.appName.indexOf("Microsoft Internet")==-1) {
-//     if (document.embeds && document.embeds[id]){
-//  //   	if(navigator.userAgent.indexOf("Firefox")>0){
-//  //   		chartRef = document.embeds[id];
-//  //   	}else{
-//  //   		chartRef = window[id];
-//  //   	}
-//      alert("firefox");
-//     }else{
-// 	// 	chartRef  = window.document[id];
-// 	alert("chrome");
-//     }
-//   alert("others");	     
-//   }
-//   else {                  
-//     //chartRef = window[id];
-//     alert("microsoft");
-//   }
- //alert(window.document.getElementById('movie_player').FrameNum);
-     
-     
-        
-//         function getFlashMovieObject(movieName)
+
+
+function getFlashMovieObject(movieName)  
+ {  
+   if (window.document[movieName])  
+   {  
+
+       return window.document[movieName];  
+
+   }  
+
+   if (navigator.appName.indexOf("Microsoft Internet")==-1)  
+
+   {  
+
+     if (document.embeds && document.embeds[movieName])  
+
+       return document.embeds[movieName];  
+
+   }  
+
+   else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)  
+
+   {  
+
+     return document.getElementById(movieName);  
+
+   }  
+
+ } 
+ 
+ function StopFlashMovie()
+{
+	var flashMovie=getFlashMovieObject("Myflash");
+	flashMovie.StopPlay();
+}
+
+function PlayFlashMovie()
+{
+	var flashMovie=getFlashMovieObject("Myflash");
+	flashMovie.Play();
+	//embed.nativeProperty.anotherNativeMethod();
+}
+
+PlayFlashMovie();
+
+// function RewindFlashMovie()
 // {
-//   if (window.document[movieName])
-//   {
-//       return window.document[movieName];
-//   }
-//   if (navigator.appName.indexOf("Microsoft Internet")==-1)
-//   {
-//     if (document.embeds && document.embeds[movieName])
-//       return document.embeds[movieName];
-//   }
-//   else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
-//   {
-//     return document.getElementById(movieName);
-//   }
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	flashMovie.Rewind();
+// }
+
+// function NextFrameFlashMovie()
+// {
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	// 4 is the index of the property for _currentFrame
+// 	var currentFrame=flashMovie.TGetProperty("/", 4);
+// 	var nextFrame=parseInt(currentFrame);
+// 	if (nextFrame>=9)
+// 		nextFrame=0;
+// 	flashMovie.GotoFrame(nextFrame);		
 // }
 
 
-  alert(document.getElementById('Myflash').attributes["data"].value);
-  document.getElementById('Myflash').Play(); 
-   alert("ok");
-   
-    
-   
+// function ZoominFlashMovie()
+// {
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	flashMovie.Zoom(90);
+// }
+
+// function ZoomoutFlashMovie()
+// {
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	flashMovie.Zoom(110);
+// }
+
+
+// function SendDataToFlashMovie()
+// {
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	flashMovie.SetVariable("/:mytext", document.getElementById("data").value);
+// }
+
+// function ReceiveDataFromFlashMovie()
+// {
+// 	var flashMovie=getFlashMovieObject("Myflash");
+// 	document.getElementById("data").value=flashMovie.GetVariable("/:mytext");
+// 	//document.controller.Data.value=message;
+// }
+
+
 
 
