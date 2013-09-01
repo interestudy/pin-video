@@ -6,7 +6,7 @@
  
  var mymovie = $("#myFlashMovie");
 
- mymovie.play();
+ mymovie.Play();
 alert("ok");
 
 
