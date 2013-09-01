@@ -38,7 +38,7 @@
 // }
 
 
-  alert(document.getElementById('movie_player'));
+  alert(document.getElementById('movie_player').attr('data'));
    alert("ok");
    
     
