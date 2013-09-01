@@ -29,6 +29,6 @@ return document.getElementById(movieName);
 
 
 var flash = getFlashMovieObject("myMovie");
-alert(flash;
+alert(flash);
 document.myMovie.StopPlay();
 alert("ok");
