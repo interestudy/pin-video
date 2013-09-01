@@ -29,13 +29,13 @@ function getFlashMovieObject(movieName)
  
  function StopFlashMovie()
 {
-	var flashMovie=getFlashMovieObject("movie_player");
+	var flashMovie=getFlashMovieObject("myMovie");
 	flashMovie.StopPlay();
 }
 
 function PlayFlashMovie()
 {
-	var flashMovie=getFlashMovieObject("Myflash");
+	var flashMovie=getFlashMovieObject("myMovie");
 	flashMovie.Play();
 	//embed.nativeProperty.anotherNativeMethod();
 }
