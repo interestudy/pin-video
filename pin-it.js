@@ -30,5 +30,5 @@ return document.getElementById(movieName);
 
 var flash = getFlashMovieObject("myMovie");
 alert(flash.attr('id'));
-flash.StopPlay();
+document.myMovie.StopPlay();
 alert("ok");
