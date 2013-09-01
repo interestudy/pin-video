@@ -1,4 +1,3 @@
-
 function getFlashMovieObject(movieName)  
  {  
    if (window.document[movieName])  
@@ -41,7 +40,7 @@ function PlayFlashMovie()
 	//embed.nativeProperty.anotherNativeMethod();
 }
 
-StopFlashMovie();
+StopFlashMovie();alert("ok");
 
 // function RewindFlashMovie()
 // {
