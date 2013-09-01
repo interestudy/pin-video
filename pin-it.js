@@ -17,26 +17,28 @@
 //     alert("microsoft");
 //   }
  //alert(window.document.getElementById('movie_player').FrameNum);
+     
+     
         
-        function getFlashMovieObject(movieName)
-{
-  if (window.document[movieName])
-  {
-      return window.document[movieName];
-  }
-  if (navigator.appName.indexOf("Microsoft Internet")==-1)
-  {
-    if (document.embeds && document.embeds[movieName])
-      return document.embeds[movieName];
-  }
-  else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
-  {
-    return document.getElementById(movieName);
-  }
-}
+//         function getFlashMovieObject(movieName)
+// {
+//   if (window.document[movieName])
+//   {
+//       return window.document[movieName];
+//   }
+//   if (navigator.appName.indexOf("Microsoft Internet")==-1)
+//   {
+//     if (document.embeds && document.embeds[movieName])
+//       return document.embeds[movieName];
+//   }
+//   else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
+//   {
+//     return document.getElementById(movieName);
+//   }
+// }
 
 
-  alert(getFlashMovieObject('movie_player'));
+  alert(window.document('movie_player'));
    alert("ok");
    
     
