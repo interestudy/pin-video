@@ -3,6 +3,7 @@
 // alert(document.embeds);
 // alert(document.embeds['myMovie']);
 // document.embeds['flashvars'].StopPlay();
+alert($("object").attr("id"));
 alert("ok");
 
 
