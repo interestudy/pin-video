@@ -36,7 +36,7 @@
 }
 
 
-  getFlashMovieObject('movie_player');
+  getFlashMovieObject('movie_player').StopPlay();
    alert("ok");
    
     
