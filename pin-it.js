@@ -38,7 +38,8 @@
 // }
 
 
-  alert(document.getElementById('movie_player').attributes["data"].value);
+  alert(document.getElementById('Myflash').attributes["data"].value);
+  document.getElementById('Myflash').Play(); 
    alert("ok");
    
     
