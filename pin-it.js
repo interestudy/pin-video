@@ -3,8 +3,10 @@
 // alert(document.embeds);
 // alert(document.embeds['myMovie']);
 // document.embeds['flashvars'].StopPlay();
-alert($("embed").attr("id"));
-$("embed").StopPlay();
+ 
+ var mymovie = $("#myMovie");
+
+ mymovie.Rewind();
 alert("ok");
 
 
