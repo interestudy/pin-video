@@ -4,9 +4,9 @@
 // alert(document.embeds['myMovie']);
 // document.embeds['flashvars'].StopPlay();
  
- var mymovie = $("#myMovie");
+ var mymovie = $("#myFlashMovie");
 
- mymovie.Rewind();
+ mymovie.play();
 alert("ok");
 
 
