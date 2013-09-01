@@ -1,5 +1,4 @@
 
-
 if (navigator.appName.indexOf("Microsoft Internet")==-1) {
     if (document.embeds && document.embeds[id]){
     	if(navigator.userAgent.indexOf("Firefox")>0){
@@ -16,10 +15,7 @@ if (navigator.appName.indexOf("Microsoft Internet")==-1) {
   else {                  
     chartRef = window[id];
   }
-         
-        chartRef.gotoframe(11);
-        chartRef.play();
-       
+        
         alert("ok");
    
     
