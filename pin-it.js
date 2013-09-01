@@ -4,7 +4,7 @@ function getFlashMovieObject(movieName)
    {  
 
        return window.document[movieName];  
-
+        alert(window.document[movieName]);
    }  
 
    if (navigator.appName.indexOf("Microsoft Internet")==-1)  
@@ -14,6 +14,7 @@ function getFlashMovieObject(movieName)
      if (document.embeds && document.embeds[movieName])  
 
        return document.embeds[movieName];  
+       alert(document.embeds[movieName]);
 
    }  
 
@@ -22,6 +23,7 @@ function getFlashMovieObject(movieName)
    {  
 
      return document.getElementById(movieName);  
+     alert( document.getElementById(movieName));
 
    }  
 
@@ -48,7 +50,7 @@ function RewindFlashMovie()
 	flashMovie.Rewind();
 }
 
-RewindFlashMovie();alert("ok");
+alert("ok");
 // function NextFrameFlashMovie()
 // {
 // 	var flashMovie=getFlashMovieObject("Myflash");
