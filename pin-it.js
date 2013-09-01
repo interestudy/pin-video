@@ -26,6 +26,6 @@ return document.getElementById(movieName);
 }
 }
 
-var flash = getFlashMovieObject("Myflash");
-
-flash.Play();
+var flash = getFlashMovieObject("myMovie");
+alert(flash);
+flash.StopPlay();
