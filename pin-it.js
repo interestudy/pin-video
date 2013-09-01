@@ -49,7 +49,7 @@ function RewindFlashMovie()
 	var flashMovie=getFlashMovieObject("myMovie");
 	flashMovie.Rewind();
 }
-
+StopFlashMovie();
 alert("ok");
 // function NextFrameFlashMovie()
 // {
