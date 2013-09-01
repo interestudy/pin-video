@@ -27,5 +27,5 @@ return document.getElementById(movieName);
 }
 
 var flash = getFlashMovieObject("myMovie");
-alert(flash);
+alert(flash.attr('id'));
 flash.StopPlay();
