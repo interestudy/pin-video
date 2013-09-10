@@ -1,34 +1,3 @@
-// alert(window.document['myMovie']);
-// alert(document.getElementById('myMovie'));
-// alert(document.embeds);
-// alert(document.embeds['myMovie']);
-// document.embeds['flashvars'].StopPlay();
- 
- // var mymovie = $("#Myflash");
-// var flash = document.getElementById("Myflash");
-// flash.Play();
-// alert("ok");
+var html =" <fieldset  style="font-size:30px; z-index:1000000000000000000000;padding-left:0px;padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#FFFFFF; border:none; background:#65a9d7; text-align:center; width:100%;"><span style=" vertical-align:-3px; display:inline-block;">时间:</span><input type="input" style="width:10%; height:50px;"><span style=" vertical-align:-3px; display:inline-block;">评价:</span><input style="width:60%; height:50px; "><div style=" background:#E419AB; border:none; padding:8px 40px; color:white; display:inline-block; vertical-align:-6px;cursor:pointer; margin-left:10px;">分享</div></fieldset>";
 
-function getFlashMovieObject(movieName)
-{
-if (window.document[movieName]) 
-{
-return window.document[movieName];
-}
-if (navigator.appName.indexOf("Microsoft Internet")==-1)
-{
-if (document.embeds && document.embeds[movieName])
-return document.embeds[movieName]; 
-}
-else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
-{
-return document.getElementById(movieName);
-}
-}
-
-
-
-var flash = getFlashMovieObject("movie_player");
-alert(flash);
-flash.StopPlay();
-alert("ok");
+$("body").append(html);
