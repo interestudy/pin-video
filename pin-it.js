@@ -9,11 +9,5 @@ var html = "  <fieldset  style='font-size:30px; padding-left:0px; padding-right:
 
 $('body').prepend(html);
 
-var num = Math.round(Math.random()*1000000000);
 
-$('.pin_goit').live('click',function(){ alert('hello');
-   $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
-
-   });
-});
 
