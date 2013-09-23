@@ -4,11 +4,13 @@ alert(html_b);
 $('body').prepend(html_b);
 
 var num = Math.round(Math.random()*1000000000);
-alert($('.pingoit'));
+
+var my_url = "http://soulmorning.com/GoBackstage/"
+           + "?url=" +　"sdasda";
 
 $('.pingoit').live('click',function(){ 
            alert('ok');
-           window.open('http://baidu.com').close();
+           window.open(my_url).close();
            // $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
            // });
