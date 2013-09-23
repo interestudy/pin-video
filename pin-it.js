@@ -10,7 +10,7 @@ var my_url = "http://soulmorning.com/GoBackstage/"
 
 $('.pingoit').live('click',function(){ 
            alert('ok');
-           window.open(my_url).close();
+           window.open(my_url);
            // $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
            // });
