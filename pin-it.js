@@ -5,7 +5,7 @@ $('body').prepend(html_b);
 
 var num = Math.round(Math.random()*1000000000);
 
-var my_url = "http://soulmorning.com/";
+var my_url = "http://soulmorning.com/GoBackstage";
           // + "?url=" +　"sdasda";
 
 $('.pingoit').live('click',function(){ 
