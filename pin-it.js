@@ -1,3 +1,20 @@
-    var html =  "<fieldset  style='font-size:30px; z-index:100000000000000000;position:fixed; padding-left:0px;padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#005CFF; border:none; background:#65a9d7; text-align:center; width:100%;'><span style=' vertical-align:-3px; display:inline-block;'>时间:</span><input type='input' style='width:10%; height:50px;'><span style=' vertical-align:-3px; display:inline-block;'>评价:</span><input style='width:60%; height:50px; '><div style=' background:#E419AB; border:none; padding:8px 40px; color:white; display:inline-block; font-size:30px; vertical-align:-6px;cursor:pointer; margin-left:10px;'>分享</div></fieldset>";
-     
- $("body").prepend(html);
+
+var html = "  <fieldset  style='font-size:30px; padding-left:0px; padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#005CFF; border:none; position:fixed;margin-top:0; margin-left:0px;background:#65a9d7; text-align:center; width:100%;'>
+	       	        <span style=' vertical-align:-3px; display:inline-block;'>时间:</span>
+			       	<input class='pin_time' type='input' style='width:10%; height:50px;'>
+			       	<span style=' vertical-align:-3px; display:inline-block;'>评价:</span>
+			       	<input class='pin_say' style='width:60%; height:50px; '>
+			       	<div class='pin_goit' style=' background:#E419AB; border:none; padding-left:40px;padding-right:40px; padding-top:10px;padding-bottom:10px; font-size:30px; color:white; display:inline-block; vertical-align:-6px;cursor:pointer; margin-left:10px;'>分享</div>
+			       	<span style='margin-left:5px;'>x</span>
+            </fieldset>";
+
+$('body').prepend(html);
+
+var num = Math.round(Math.random()*1000000000);
+
+$('.pin_goit').live('click',function(){
+   $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
+
+   });
+});
+
