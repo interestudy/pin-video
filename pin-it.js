@@ -8,7 +8,7 @@ alert($('.pingoit'));
 
 $('.pingoit').live('click',function(){ 
            alert('ok');
-           window.open('http://baidu.com');
+           window.open('http://baidu.com').close();
            // $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
            // });
