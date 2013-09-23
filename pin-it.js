@@ -5,11 +5,11 @@ $('body').prepend(html_b);
 
 var num = Math.round(Math.random()*1000000000);
 
-// $('.pin_goit').live('click',function(){ 
-//            alert('ok');
+$('.pin_goit').live('click',function(){ 
+           alert('ok');
 //            $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
 //    });
-// });
+});
 
 
