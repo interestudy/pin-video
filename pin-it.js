@@ -1,4 +1,3 @@
-
 var html = "  <fieldset  style='font-size:30px; padding-left:0px; padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#005CFF; border:none; position:fixed;margin-top:0; margin-left:0px;background:#65a9d7; text-align:center; width:100%;'>
 	       	        <span style=' vertical-align:-3px; display:inline-block;'>时间:</span>
 			       	<input class='pin_time' type='input' style='width:10%; height:50px;'>
@@ -12,7 +11,7 @@ $('body').prepend(html);
 
 var num = Math.round(Math.random()*1000000000);
 
-$('.pin_goit').live('click',function(){
+$('.pin_goit').live('click',function(){ alert('hello');
    $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
    });
