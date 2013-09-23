@@ -8,9 +8,9 @@ alert($('.pingoit'));
 
 $('.pingoit').live('click',function(){ 
            alert('ok');
-//            $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
+           $.get('http://soulmorning.com/GoBackstage',{pin_time:$('.pin_time'); pin_say:$('.pin_say');numb:num;},function(returnedData){
 
-//    });
+           });
 });
 
 
