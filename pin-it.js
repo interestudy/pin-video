@@ -1,4 +1,4 @@
-var htmla = "<span style='margin-left:5px;'>x</span>";
+var htmla = "<span style='margin-left:5px;'>x</span> <span style='margin-left:5px;'>x</span>";
 
 var htmlb =  " <fieldset  style='font-size:30px; padding-left:0px; padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#005CFF; border:none; position:fixed;margin-top:0; margin-left:0px;background:#65a9d7; text-align:center; width:100%;'>
 	
@@ -10,7 +10,7 @@ var htmlb =  " <fieldset  style='font-size:30px; padding-left:0px; padding-right
        	<span style='margin-left:5px;'>x</span>
            
             </fieldset> ";
-           alert(htmla + htmlb);
+           alert(htmla); alert(htmlb);
 
 //$('body').prepend(html);
 
