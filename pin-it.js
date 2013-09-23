@@ -3,7 +3,7 @@ var html_b =  " <fieldset  style='font-size:30px; padding-left:0px; padding-righ
 alert(html_b);
 $('body').prepend(html_b);
 
-// var num = Math.round(Math.random()*1000000000);
+var num = Math.round(Math.random()*1000000000);
 
 // $('.pin_goit').live('click',function(){ 
 //            alert('ok');
