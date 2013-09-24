@@ -27,7 +27,7 @@ $('.pingoit').live('click',function(){
                     + "?" + video_id
                     + "&video_time=" + video_time
                     + "&video_comment=" + video_comment;
-          if($.trim(video_time).length >= 0 && $.trim(video_comment).length >= 0 ){
+          if($.trim(video_time).length > 0 && $.trim(video_comment).length > 0 ){
             window.open(my_url);
           }
           
