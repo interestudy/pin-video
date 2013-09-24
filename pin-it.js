@@ -7,18 +7,20 @@ $('body').prepend(html_b);
 
 var num = Math.round(Math.random()*1000000000);
 //检测视频来源
-var url_now = window.location.href;alert(url_now.indexOf("youku") != -1));
-if(url_now.indexOf("youku") != -1){
-          var flashvars_value = $("param[name='flashvars']").attr('value');
-          var nums = flashvars_value.indexOf('&');
-          var video_id = flashvars_value.substring(0,nums);
+var url_now = window.location.href;
+alert(url_now);
+alert(url_now.indexOf("youku"));
+// if(url_now.indexOf("youku") != -1){
+//           var flashvars_value = $("param[name='flashvars']").attr('value');
+//           var nums = flashvars_value.indexOf('&');
+//           var video_id = flashvars_value.substring(0,nums);
           
           
           
           
-          var my_url = "http://soulmorning.com/GoBackstage"
-                    + "?" + video_id;
-}
+//           var my_url = "http://soulmorning.com/GoBackstage"
+//                     + "?" + video_id;
+// }
 $('.pingoit').live('click',function(){ 
            alert('ok');
            window.open(my_url);
