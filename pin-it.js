@@ -20,10 +20,17 @@ $('.pingoit').live('click',function(){
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val(); 
           
-          var my_url = "http://soulmorning.com/GoBackstage"
+          // var my_url = "http://soulmorning.com/GoBackstage"
+          //           + "?" + video_id
+          //           + "&video_time=" + video_time
+          //           + "&video_comment=" + video_comment;
+                    
+                              
+          var my_url = "localhost:8080/v/GoBackstage"
                     + "?" + video_id
                     + "&video_time=" + video_time
                     + "&video_comment=" + video_comment;
+                    
           if($.trim(video_time).length <= 0 || $.trim(video_comment).length <= 0 ){
                     alert("输入你分享的那么时间点——————以及你想说些什么");
           }else{
