@@ -7,7 +7,7 @@ var num = Math.round(Math.random()*1000000000);
 
 var flashvars_value = $("param[name='flashvars']").attr('value');
 var numf = flashvars_value.indexOf('=');
-var nums = flashvars_velue.indexOf('&');
+var nums = flashvars_value.indexOf('&');
 alert(flashvars_value.substring(numf,nums));
 
 
