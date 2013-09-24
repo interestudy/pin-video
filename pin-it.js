@@ -6,20 +6,13 @@ var num = Math.round(Math.random()*1000000000);
 
 
 var flashvars_value = $("param[name='flashvars']").attr('value');
-var numf = flashvars_value.indexOf('=');
 var nums = flashvars_value.indexOf('&');
-alert(flashvars_value.substring(numf,nums));
+var video_id = flashvars_value.substring(0,nums);
 
 
 
-
-
-
-
-
-
-var my_url = "http://soulmorning.com/GoBackstage";
-          // + "?url=" +　"sdasda";
+var my_url = "http://soulmorning.com/GoBackstage"
+          + video_id;
 
 $('.pingoit').live('click',function(){ 
            alert('ok');
