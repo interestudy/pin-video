@@ -23,13 +23,16 @@ $('.pingoit').live('click',function(){
           // var my_url = "http://soulmorning.com/GoBackstage"
           //           + "?" + video_id
           //           + "&video_time=" + video_time
-          //           + "&video_comment=" + video_comment;
+          //           + "&video_comment=" + video_comment
+          //           + "urlencoding=utf-8";
+          
                     
                               
           var my_url = "localhost:8080/v/GoBackstage"
                     + "?" + video_id
                     + "&video_time=" + video_time
-                    + "&video_comment=" + video_comment;
+                    + "&video_comment=" + video_comment
+                    + "urlencoding=utf-8";
                     
           if($.trim(video_time).length <= 0 || $.trim(video_comment).length <= 0 ){
                     alert("输入你分享的那么时间点——————以及你想说些什么");
