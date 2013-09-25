@@ -19,7 +19,7 @@ $('.pingoit').live('click',function(){
           var video_id = flashvars_value.substring(0,nums);
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val(); 
-          var video_title = $("#subtitle").html();
+          var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
           
           // var my_url = "http://soulmorning.com/GoBackstage"
           //           + "?" + video_id
