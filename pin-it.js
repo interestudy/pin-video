@@ -19,11 +19,13 @@ $('.pingoit').live('click',function(){
           var video_id = flashvars_value.substring(0,nums);
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val(); 
+          var video_title = $("#subtitle").html();
           
           // var my_url = "http://soulmorning.com/GoBackstage"
           //           + "?" + video_id
           //           + "&video_time=" + video_time
           //           + "&video_comment=" + video_comment
+          //           + "&video_title=" + video_title
           //           + "&urlencoding=utf-8";
           
                     
@@ -32,6 +34,7 @@ $('.pingoit').live('click',function(){
                     + "?" + video_id
                     + "&video_time=" + video_time
                     + "&video_comment=" + video_comment
+                    + "&video_title=" + video_title
                     + "&urlencoding=utf-8";
                     
           if($.trim(video_time).length <= 0 || $.trim(video_comment).length <= 0 ){
