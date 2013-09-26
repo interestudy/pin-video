@@ -17,8 +17,8 @@ $('.pingoit').live('click',function(){
           var flashvars_value = $("param[name='flashvars']").attr('value');alert(flashvars_value);
           var nums = flashvars_value.indexOf('&'); 
           var video_id = flashvars_value.substring(0,nums);
-          var video_time = $(".pin_time").val(); 
-          var video_comment = $(".pin_say").val(); 
+          var video_time = $(".pin_time").val(); alert(video_time + $.trim(video_time).length);
+          var video_comment = $(".pin_say").val(); alert(video_comment + $.trim(video_comment).length);
           var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
           
           var my_url = "http://boosor.com/GoBackstage"
