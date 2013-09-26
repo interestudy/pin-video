@@ -2,7 +2,7 @@ var html_b =  " <fieldset class='my_fieldset' style='font-size:30px;z-index:9999
 
 
 //检测视频来源
-var url_now = window.location.href;
+var url_now = window.location.href;alert(url_now);
 if(url_now.indexOf("youku") != -1){
           alert("youku");
           $('body').prepend(html_b);
