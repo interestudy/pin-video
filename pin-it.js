@@ -40,7 +40,7 @@ $('.pingoit').live('click',function(){
           if($.trim(video_time).length <= 0 || $.trim(video_comment).length <= 0 ){
                     alert("输入你分享的那么时间点———以及你想说些什么");
           }else{
-                    window.open(my_url);
+                    window.open(my_url).close();
           }
           
  });
