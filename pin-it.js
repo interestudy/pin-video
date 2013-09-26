@@ -14,9 +14,9 @@ $(".pin_no").live("click",function(){
 });
           
 $('.pingoit').live('click',function(){ 
-          var flashvars_value = $("param[name='flashvars']").attr('value');
-          var nums = flashvars_value.indexOf('&');
-          var video_id = flashvars_value.substring(0,nums); alert(video_id);
+          var flashvars_value = $("param[name='flashvars']").attr('value');alert(flashvars_value);
+          var nums = flashvars_value.indexOf('&'); 
+          var video_id = flashvars_value.substring(0,nums);
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val(); 
           var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
