@@ -21,7 +21,7 @@ $('.pingoit').live('click',function(){
           var video_comment = $(".pin_say").val(); 
           var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
           
-          var my_url = "http://soulmorning.com/GoBackstage"
+          var my_url = "http://boosor.com/GoBackstage"
                     + "?" + video_id
                     + "&video_time=" + video_time
                     + "&video_comment=" + video_comment
@@ -40,7 +40,7 @@ $('.pingoit').live('click',function(){
           if($.trim(video_time).length <= 0 || $.trim(video_comment).length <= 0 ){
                     alert("输入你分享的那么时间点———以及你想说些什么");
           }else{
-                    window.open(my_url);
+                    window.open(my_url).;
           }
           
  });
