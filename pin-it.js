@@ -3,7 +3,7 @@ var html_b =  " <fieldset class='my_fieldset' style='font-size:30px;z-index:9999
 
 //检测视频来源
 var url_now = window.location.href; 
-if(url_now.indexOf("youku") != -1){
+if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
           
           $('body').prepend(html_b);
 
@@ -16,13 +16,13 @@ $(".pin_no").live("click",function(){
 $('.pingoit').live('click',function(){ 
           var vid_f = url_now.indexOf('id_')+3;
           var vid_last = url_now.indexOf('.html');
-          var video_id = url_now.substring(vid_f,vid_last);alert(video_id);
+          var video_id = url_now.substring(vid_f,vid_last); 
           if(video_id === null){
                 var flashvars_value = $("param[name='flashvars']").attr('value');
                 var nums = flashvars_value.indexOf('&'); 
                 video_id = flashvars_value.substring(0,nums);  
           }
-alert(video_id);
+ 
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val(); 
           var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
