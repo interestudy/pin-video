@@ -15,16 +15,16 @@ $(".pin_no").live("click",function(){
           
 $('.pingoit').live('click',function(){ 
           var vid_f = url_now.indexOf('id_')+3;
-          var vid_last = url_now.indexOf('html');
-          var video_id = url_now.substring(vid_f,vid_last);alert(video_id);
+          var vid_last = url_now.indexOf('.html');
+          var video_id = url_now.substring(vid_f,vid_last);
           if(video_id === null){
-                var flashvars_value = $("param[name='flashvars']").attr('value');alert(flashvars_value);
+                var flashvars_value = $("param[name='flashvars']").attr('value');
                 var nums = flashvars_value.indexOf('&'); 
                 video_id = flashvars_value.substring(0,nums);  
           }
-
-          var video_time = $(".pin_time").val(); alert(video_time + $.trim(video_time).length);
-          var video_comment = $(".pin_say").val(); alert(video_comment + $.trim(video_comment).length);
+alert(video_id);
+          var video_time = $(".pin_time").val(); 
+          var video_comment = $(".pin_say").val(); 
           var video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();
           
           var my_url = "http://boosor.com/GoBackstage"
