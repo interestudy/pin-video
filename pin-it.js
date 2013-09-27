@@ -16,7 +16,7 @@ $(".pin_no").live("click",function(){
 $('.pingoit').live('click',function(){ 
           var vid_f = url_now.indexOf('id_')+3;
           var vid_last = url_now.indexOf('.html');
-          var video_id = url_now.substring(vid_f,vid_last);
+          var video_id = url_now.substring(vid_f,vid_last);alert(video_id);
           if(video_id === null){
                 var flashvars_value = $("param[name='flashvars']").attr('value');
                 var nums = flashvars_value.indexOf('&'); 
