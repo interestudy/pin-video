@@ -31,10 +31,10 @@ $('.pingoit').live('click',function(){
         
           
           //辨别优酷标题的三种写法
-          if($("div#vpofficialtitlev5_wrap h1").children("a").length = 1 && $("div#vpofficialtitlev5_wrap h1").children("span").length = 0){
+          if($("div#vpofficialtitlev5_wrap h1").children("a").length === 1 && $("div#vpofficialtitlev5_wrap h1").children("span").length === 0){
                 video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();
           }else
-          if($("div#vpofficialtitlev5_wrap h1").children("span").length = 1 && $("div#vpofficialtitlev5_wrap h1").children("a").length = 1){
+          if($("div#vpofficialtitlev5_wrap h1").children("span").length === 0 && $("div#vpofficialtitlev5_wrap h1").children("a").length === 1){
                 video_title = $("#vpofficialtitlev5_wrap h1").html();    
           }else 
           if($("div#vpofficialtitlev5_wrap h1").length <= 0){
