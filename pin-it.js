@@ -29,7 +29,7 @@ $('.pingoit').live('click',function(){
               video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();   
           }else
           if($("#subtitle").parent().children("a").html() + $("#subtitle").html() == null){
-               var video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();     
+              video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();     
           }else{
                  video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html() + $("#vpofficialtitlev5_wrap h1").children("a").html();   
           }
