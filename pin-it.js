@@ -19,7 +19,7 @@ $('.pingoit').live('click',function(){
           if(video_id === null){
                 var flashvars_value = $("param[name='flashvars']").attr('value');
                 var nums = flashvars_value.indexOf('&'); 
-                video_id = flashvars_value.substring(0,nums);  
+                video_id = 'VideoIDS=' + flashvars_value.substring(0,nums);  
           }
  
           var video_time = $(".pin_time").val(); 
