@@ -26,12 +26,13 @@ $('.pingoit').live('click',function(){
           var video_comment = $(".pin_say").val();
           var video_title = null;
           if($("#vpofficialtitlev5_wrap h1").children("a").html() == null){
-              video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();   
+              video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html();   alert("a");
           }else
           if($("#subtitle").parent().children("a").html() + $("#subtitle").html() == null){
-              video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();     
+              video_title = $("#vpofficialtitlev5_wrap h1").children("a").html(); alert("b") ;   
           }else{
                  video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html() + $("#vpofficialtitlev5_wrap h1").children("a").html();   
+          alert("c");
           }
            
           alert(video_title);
