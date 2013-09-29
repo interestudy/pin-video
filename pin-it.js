@@ -25,7 +25,7 @@ $('.pingoit').live('click',function(){
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val();
           var video_title = null;
-          var video_title_a = null;
+          var video_title_a = null;alert($("#vpofficialtitlev5_wrap h1").children("a").length);
           if($("#vpofficialtitlev5_wrap h1").children("a").length > 0){
                 video_title_a = $("#vpofficialtitlev5_wrap h1").children("a").html();
           }else{
