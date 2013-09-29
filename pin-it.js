@@ -23,8 +23,13 @@ $('.pingoit').live('click',function(){
           }
  
           var video_time = $(".pin_time").val(); 
-          var video_comment = $(".pin_say").val(); 
-          var video_title = $(".title").html() + $("#subtitle").parent().children("a").html() + $("#subtitle").html();
+          var video_comment = $(".pin_say").val();
+          // var video_title = null;
+          // if($(".title").html() == null){
+          //     video_title      
+          // }
+          
+           var video_title = $(".title").html() + $("#subtitle").parent().children("a").html() + $("#subtitle").html() + null;
           
           var my_url = "http://boosor.com/GoBackstage"
                     + "?" + video_id
