@@ -25,17 +25,26 @@ $('.pingoit').live('click',function(){
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val();
           var video_title = null;
-          if($("#vpofficialtitlev5_wrap h1").children("a").html() == null){
-              video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html(); 
-          }else
-          if($("#subtitle").parent().children("a").html() + $("#subtitle").html() == null){
-              video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();    
+          var video_title_a = null;
+          if($("#vpofficialtitlev5_wrap h1").children("a")){
+                video_title_a = $("#vpofficialtitlev5_wrap h1").children("a");
           }else{
-                 video_title = $("#subtitle").parent().children("a").html() + $("#vpofficialtitlev5_wrap h1").children("a").html();   
-           
+                video_title_a = $("#vpofficialtitlev5_wrap h1").html();    
           }
+          
+            if(video_title_a == null){
+              video_title = video_title_a + $("#subtitle").html(); 
+                }else
+               if($("#subtitle").parent().children("a").html() + $("#subtitle").html() == null){
+               video_title = video_title_a;   
+                }else{
+                video_title = video_title_a + $("#vpofficialtitlev5_wrap h1").children("a").html();   
+                     
+               } 
+          
+        alert(video_title);
            
-          alert(video_title);
+
           var my_url = "http://boosor.com/GoBackstage"
                     + "?" + video_id
                     + "&video_time=" + video_time
