@@ -24,21 +24,20 @@ $('.pingoit').live('click',function(){
  
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val();
-          var video_title = null;
-          var video_title_a = null;
+          var video_title = null; 
           
           
         
           
           //辨别优酷标题的三种写法
           if($("div#vpofficialtitlev5_wrap h1").children("a").length === 1 && $("div#vpofficialtitlev5_wrap h1").children("span").length === 0){
-                video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();
+                video_title = $("#vpofficialtitlev5_wrap h1").children("a").html(); alert("1" + video_title);
           }else
           if($("div#vpofficialtitlev5_wrap h1").children("span").length === 0 && $("div#vpofficialtitlev5_wrap h1").children("a").length === 1){
-                video_title = $("#vpofficialtitlev5_wrap h1").html();    
+                video_title = $("#vpofficialtitlev5_wrap h1").html();    alert("2" + video_title);
           }else 
           if($("div#vpofficialtitlev5_wrap h1").length <= 0){
-                video_title = $("div#vpofficialtitlev5_wrap h1").html();     
+                video_title = $("div#vpofficialtitlev5_wrap h1").html();     alert("3" + video_title);
           }
           
           alert(video_title);
