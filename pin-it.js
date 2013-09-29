@@ -28,8 +28,8 @@ $('.pingoit').live('click',function(){
           var video_title_a = null;
           
           
-          alert($("#vpofficialtitlev5_wrap h1").children("a").length));
-          alert($("#vpofficialtitlev5_wrap").find("h1"));
+          alert($("#vpofficialtitlev5_wrap h1").children("a").length);
+          alert($("#vpofficialtitlev5_wrap h1").html());
           
           if($("#vpofficialtitlev5_wrap h1").children("a").length > 0){
                 video_title_a = $("#vpofficialtitlev5_wrap h1").children("a").html();
