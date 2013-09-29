@@ -25,8 +25,9 @@ $('.pingoit').live('click',function(){
           var video_time = $(".pin_time").val(); 
           var video_comment = $(".pin_say").val();
           var video_title = null;
-          var video_title_a = null;alert($("#vpofficialtitlev5_wrap h1").children("a").length);
-          alert($("#vpofficialtitlev5_wrap h1"));
+          var video_title_a = null;
+          ($("#vpofficialtitlev5_wrap h1").children("a").length);
+          alert($("#vpofficialtitlev5_wrap").children("h1").html());
           
           if($("#vpofficialtitlev5_wrap h1").children("a").length > 0){
                 video_title_a = $("#vpofficialtitlev5_wrap h1").children("a").html();
