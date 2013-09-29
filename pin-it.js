@@ -2,12 +2,11 @@ var html_b =  " <fieldset class='my_fieldset' style='font-size:30px;z-index:9999
 
 //检测视频来源
 var url_now = window.location.href; 
-// if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
+if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
           
-//           $('body').prepend(html_b);
+          $('body').prepend(html_b);
 
-// }
-$('body').prepend(html_b);
+}
 
 $(".pin_no").live("click",function(){
   $(".my_fieldset").remove();
