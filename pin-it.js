@@ -28,26 +28,21 @@ $('.pingoit').live('click',function(){
           var video_title_a = null;
           
           
-          alert($("#vpofficialtitlev5_wrap h1").children("a").length);
+        
           
-          
-          if($("div#vpofficialtitlev5_wrap h1").children("a").length > 0){
-                video_title_a = $("#vpofficialtitlev5_wrap h1").children("a").html();
-          }else{
-                video_title_a = $("#vpofficialtitlev5_wrap h1").html();    
+          //辨别优酷标题的三种写法
+          if($("div#vpofficialtitlev5_wrap h1").children("a").length = 1 && $("div#vpofficialtitlev5_wrap h1").children("span").length = 0){
+                video_title = $("#vpofficialtitlev5_wrap h1").children("a").html();
+          }else
+          if($("div#vpofficialtitlev5_wrap h1").children("span").length = 1 && $("div#vpofficialtitlev5_wrap h1").children("a").length = 1){
+                video_title = $("#vpofficialtitlev5_wrap h1").html();    
+          }else 
+          if($("div#vpofficialtitlev5_wrap h1").length <= 0){
+                video_title = $("div#vpofficialtitlev5_wrap h1").html();     
           }
-          alert(video_title_a);
-            if(video_title_a == null){
-              video_title = video_title_a + $("#subtitle").html(); 
-                }else
-               if($("#subtitle").parent().children("a").html() + $("#subtitle").html() == null){
-               video_title = video_title_a;   
-                }else{
-                video_title = video_title_a + $("#vpofficialtitlev5_wrap h1").children("a").html();   
-                     
-               } 
           
-        alert(video_title);
+          alert(video_title);
+
            
 
           var my_url = "http://boosor.com/GoBackstage"
