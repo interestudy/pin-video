@@ -31,7 +31,7 @@ $('.pingoit').live('click',function(){
           }else{
                 video_title_a = $("#vpofficialtitlev5_wrap h1").html();    
           }
-          
+          alert(video_title_a);
             if(video_title_a == null){
               video_title = video_title_a + $("#subtitle").html(); 
                 }else
