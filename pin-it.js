@@ -34,7 +34,7 @@ $('.pingoit').live('click',function(){
                  video_title = $("#subtitle").parent().children("a").html() + $("#subtitle").html() + $("#vpofficialtitlev5_wrap h1").children("a").html();   
           }
            
-          
+          alert(video_title);
           var my_url = "http://boosor.com/GoBackstage"
                     + "?" + video_id
                     + "&video_time=" + video_time
