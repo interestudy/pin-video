@@ -36,21 +36,22 @@ $('.pingoit').live('click',function(){
           var _h1_children = $("div#vpofficialtitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
           var _h1_span = $("div#vpofficialtitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
             
-          // if(_h1_children > 0){
-          //         if(_h1_span > 0)  
-          // }
-            
-          // if( _h1_a == 1 &&  _h1_span == 0 && _h1_children > 0){
-          //       video_title = $("#vpofficialtitlev5_wrap h1").children("a").html(); alert("1" + video_title);
-          // }else
-          // if( _h1_span == 0 && _h1_a == 0 ){
-          //       video_title = $("#vpofficialtitlev5_wrap h1").html();    alert("2" + video_title);
-          // }else 
-          // if(_h1_a == 0 && _h1_span == 1 ){
-          //       video_title = $("div#vpvideotitlev5_wrap h1 span").html();     alert("3" + video_title);
-          // }
-          
-          //alert(video_title);
+          if(_h1_children > 0){
+                  if(_h1_span > 0 && _h1_a > 0){
+                            video_title = $("div#vpofficialtitlev5_wrap h1 a").html() + $("div#vpofficialtitlev5_wrap h1 span").html();
+                  } else
+                  if(_h1_span > 0 $$ _h1_a <= 0){
+                            video_title = $("div#vpofficialtitlev5_wrap h1 span").html();
+                  } else
+                  if(_h1_span <= 0 $$ _h1_a > 0){
+                            video_title = $("div#vpofficialtitlev5_wrap h1 a").html();
+                  }
+          }else 
+          if(_h1_children <= 0){
+                    video_title = $("div#vpofficialtitlev5_wrap h1").html();
+          }
+
+          alert(video_title);
 
            
 
