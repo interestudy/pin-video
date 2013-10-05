@@ -2,6 +2,7 @@ var html_b =  " <fieldset class='my_fieldset' style='font-size:30px;z-index:9999
 // alert($("div#vpvideotitlev5_wrap .title").html());
 // alert($("div#vpvideotitlev5 h1").html());
 // alert($("div#vpofficialtitlev5_wrap h1").children('a').length  +　$("div#vpofficialtitlev5_wrap h1 a").html()); 
+    var _h1 =  $("#vpvideotitlev5_wrap h1").length;alert(_h1 + "_h1");
 //检测视频来源
 var url_now = window.location.href; 
 if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
@@ -35,7 +36,7 @@ $('.pingoit').live('click',function(){
           var _h1_a =  $("div#vpofficialtitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
           var _h1_children = $("div#vpofficialtitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
           var _h1_span = $("div#vpofficialtitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
-           var _h1 =  $("div#vpofficialtitlev5_wrap h1").length;alert(_h1 + "_h1");
+           var _h1 =  $("#vpvideotitlev5_wrap h1").length;alert(_h1 + "_h1");
            
           if(_h1_children > 0){
                   if(_h1_span > 0 && _h1_a > 0){
