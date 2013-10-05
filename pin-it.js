@@ -50,7 +50,7 @@ $('.pingoit').live('click',function(){
                   }
           }else 
           if( _h1_children == 0){alert('adad');
-                    video_title = $("#vpofficialtitlev5_wrap h1").html();
+                    video_title = $("#vpvideotitlev5_wrap h1").html();
           }
 
           alert(video_title);
