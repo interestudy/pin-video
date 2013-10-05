@@ -35,7 +35,8 @@ $('.pingoit').live('click',function(){
           var _h1_a =  $("div#vpofficialtitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
           var _h1_children = $("div#vpofficialtitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
           var _h1_span = $("div#vpofficialtitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
-            
+           var _h1 =  $("div#vpofficialtitlev5_wrap h1").length;alert(_h1 + "_h1");
+           
           if(_h1_children > 0){
                   if(_h1_span > 0 && _h1_a > 0){
                             video_title = $("div#vpofficialtitlev5_wrap h1 a").html() + $("div#vpofficialtitlev5_wrap h1 span").html();
