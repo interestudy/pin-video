@@ -36,7 +36,7 @@ $('.pingoit').live('click',function(){
           
           var _h1_a = $("#vpofficialtitlev5_wrap h1 a");
           var _h1_span = $("#vpofficialtitlev5_wrap h1 span");
-          if($("#vpofficialtitlev5_wrap").length = 1){
+          if($("#vpofficialtitlev5_wrap").length == 1){
               if( _h1_a.length == 1 && _h1_span.length == 0 ){
                   video_title = $("#vpofficialtitlev5_wrap h1 a").html();
               }else
