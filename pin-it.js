@@ -1,8 +1,8 @@
 var html_b =  " <fieldset class='my_fieldset' style='font-size:30px;z-index:9999999999999999999; padding-left:0px; padding-right:0px;padding-top: 5px; padding-bottom:5px; color:#FFF; border:none; position:fixed;margin-top:0; margin-left:0px;background:rgb(179, 20, 147); text-align:center; width:100%;'><span style=' vertical-align:-3px; display:inline-block;'>时间:</span><input class='pin_time' type='input' style='width:10%; font-size:25px;height:50px;'><span style=' vertical-align:-3px; display:inline-block;'>评价:</span><input class='pin_say' style='width:60%; height:50px; font-size:25px; '><div class='pingoit' style=' background:#555; border:none; padding-left:40px;padding-right:40px; padding-top:15px;padding-bottom:15px; font-size:30px; color:white; display:inline-block; vertical-align:-3px;cursor:pointer; margin-left:10px;'>分享</div><span class='pin_no' style='margin-left:25px;cursor:pointer;font-size:30px;color:#FFF;'>x</span></fieldset> ";
-// alert($("div#vpvideotitlev5_wrap .title").html());
+// alert($("div##vpvideotitlev5_wrap .title").html());
 // alert($("div#vpvideotitlev5 h1").html());
-// alert($("div#vpofficialtitlev5_wrap h1").children('a').length  +　$("div#vpofficialtitlev5_wrap h1 a").html()); 
-    var _h1 =  $("#vpvideotitlev5_wrap h1").html();alert(_h1 + "_h1");
+// alert($("#vpvideotitlev5_wrap h1").children('a').length  +　$("#vpvideotitlev5_wrap h1 a").html()); 
+    var _h1 =  $("##vpvideotitlev5_wrap h1").html();alert(_h1 + "_h1");
 //检测视频来源
 var url_now = window.location.href; 
 if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
@@ -33,24 +33,24 @@ $('.pingoit').live('click',function(){
         
           
           //辨别优酷标题的三种写法
-          var _h1_a =  $("div#vpofficialtitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
-          var _h1_children = $("div#vpofficialtitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
-          var _h1_span = $("div#vpofficialtitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
-           var _h1 =  $("#vpvideotitlev5_wrap h1").length;alert(_h1 + "_h1");
+          var _h1_a =  $("#vpvideotitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
+          var _h1_children = $("#vpvideotitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
+          var _h1_span = $("#vpvideotitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
+           var _h1 =  $("##vpvideotitlev5_wrap h1").length;alert(_h1 + "_h1");
            
           if(_h1_children > 0){
                   if(_h1_span > 0 && _h1_a > 0){
-                            video_title = $("div#vpofficialtitlev5_wrap h1 a").html() + $("div#vpofficialtitlev5_wrap h1 span").html();
+                            video_title = $("#vpvideotitlev5_wrap h1 a").html() + $("#vpvideotitlev5_wrap h1 span").html();
                   } else
                   if(_h1_span > 0 && _h1_a <= 0){
-                            video_title = $("div#vpofficialtitlev5_wrap h1 span").html();
+                            video_title = $("#vpvideotitlev5_wrap h1 span").html();
                   } else
                   if(_h1_span <= 0 && _h1_a > 0){
-                            video_title = $("div#vpofficialtitlev5_wrap h1 a").html();
+                            video_title = $("#vpvideotitlev5_wrap h1 a").html();
                   }
           }else 
           if( _h1_children == 0){alert('adad');
-                    video_title = $("#vpvideotitlev5_wrap h1").html();
+                    video_title = $("##vpvideotitlev5_wrap h1").html();
           }
 
           alert(video_title);
