@@ -47,7 +47,7 @@ $('.pingoit').live('click',function(){
                             video_title = $("div#vpofficialtitlev5_wrap h1 a").html();
                   }
           }else 
-          if(_h1_children == 0){
+          if( _h1_children == 0){alert('adad');
                     video_title = $("div#vpofficialtitlev5_wrap h1").html();
           }
 
