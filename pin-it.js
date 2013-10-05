@@ -33,7 +33,7 @@ $('.pingoit').live('click',function(){
         
           
           //辨别优酷标题的三种写法
-          var _h1_a =  $("#vpvideotitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
+          var _h1_a =  $("div#vpvideotitlev5_wrap h1 a").length;alert(_h1_a + "_h1_a");
           var _h1_children = $("#vpvideotitlev5_wrap h1").children().length;alert( _h1_children + "_h1");
           var _h1_span = $("#vpvideotitlev5_wrap h1").children("span").length;alert(_h1_span + "_h1_span");
            var _h1 =  $("#vpvideotitlev5_wrap h1").length;alert(_h1 + "_h1");
