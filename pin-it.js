@@ -40,10 +40,10 @@ $('.pingoit').live('click',function(){
                   if(_h1_span > 0 && _h1_a > 0){
                             video_title = $("div#vpofficialtitlev5_wrap h1 a").html() + $("div#vpofficialtitlev5_wrap h1 span").html();
                   } else
-                  if(_h1_span > 0 $$ _h1_a <= 0){
+                  if(_h1_span > 0 && _h1_a <= 0){
                             video_title = $("div#vpofficialtitlev5_wrap h1 span").html();
                   } else
-                  if(_h1_span <= 0 $$ _h1_a > 0){
+                  if(_h1_span <= 0 && _h1_a > 0){
                             video_title = $("div#vpofficialtitlev5_wrap h1 a").html();
                   }
           }else 
