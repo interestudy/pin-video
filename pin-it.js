@@ -50,7 +50,7 @@ $('.pingoit').live('click',function(){
           if($("#vpvideotitlev5_wrap").length == 1){
               video_title = $("#vpvideotitlev5_wrap h1").html();
           }
-
+          
           // alert(video_title);
 
           var my_url = "http://boosor.com/GoBackstage"
@@ -74,6 +74,6 @@ $('.pingoit').live('click',function(){
           }else{
                     window.open(my_url);
           }
-          
+          $('.my_fieldset').remove();
  });
 
