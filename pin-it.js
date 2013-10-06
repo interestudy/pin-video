@@ -35,7 +35,7 @@ $('.pingoit').live('click',function(){
           //辨别优酷标题的三种写法
           
           var _h1_a = $("#vpofficialtitlev5_wrap h1 a"); 
-          var _h1_span = $("#vpofficialtitlev5_wrap h1 span"); alert(_h1_a.length);alert(_h1_span.length);
+          var _h1_span = $("#vpofficialtitlev5_wrap h1 span");
           if($("#vpofficialtitlev5_wrap").length == 1){
               if( _h1_a.length == 1 && _h1_span.length == 0 ){
                   video_title = $("#vpofficialtitlev5_wrap h1 a").html();
@@ -48,7 +48,15 @@ $('.pingoit').live('click',function(){
               }
           }else 
           if($("#vpvideotitlev5_wrap").length == 1){
-              video_title = $("#vpvideotitlev5_wrap h1").html();
+             if($("#vpvideotitlev5_wrap h1 span").length == 0){
+                
+               video_title = $("#vpvideotitlev5_wrap h1").html(); 
+             }else
+             if(video_title = $("#vpvideotitlev5_wrap h1 span") == 1){
+                
+                video_title = $("#vpvideotitlev5_wrap h1 span").html(); 
+             }
+              
           }
           
           // alert(video_title);
