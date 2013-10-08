@@ -9,6 +9,8 @@ if(url_now.indexOf("youku") != -1 && url_now.indexOf(".html") != -1){
           
           $('body').prepend(html_b);
 
+}else{
+   window.open("http://boosor.com");
 }
 
 $(".pin_no").live("click",function(){
